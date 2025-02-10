@@ -1,0 +1,198 @@
+/* Small Screen */
+@media screen and (min-width: 640px){
+    .sm-100{
+        width: 100%;
+    }
+    .sm-50{
+        width: 50%;
+    }
+    .sm-33{
+        width: 33%;
+    }
+    .sm-25{
+        width: 25%;
+    }
+
+    .gallery .images_gallery{
+        column-count: 1;
+    }
+    
+    
+}
+/* Medium Screen */
+@media screen and (min-width: 768px){
+    .md-100{
+        width: 100%;
+    }
+    .md-50{
+        width: 50%;
+    }
+    .md-33{
+        width: 33%;
+    }
+    .md-25{
+        width: 25%;
+    }
+    .chefs .card{
+        padding: 0;
+    }
+}
+/* Large Screen */
+@media screen and (min-width: 1024px){
+    .contact form .input_group{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .container{
+        width: 70%;
+    }
+    .lg-100{
+        width: 100%;
+    }
+    .lg-50{
+        width: 50%;
+    }
+    .lg-33{
+        width: 33%;
+    }
+    .lg-25{
+        width: 25%;
+    }
+    .chefs .card{
+        padding: 0;
+    }
+    .nav_bar .mode-group i{
+        font-size: 25px;
+    }
+    .nav_bar .logo a{
+        font-size: 30px;
+    }
+    .gallery .images_gallery{
+        column-count: 2;
+    }
+    .contact_content .item {
+        flex-basis: calc(50% - 20px);
+    }
+    .home .container{
+        flex-direction: row;
+    }
+    .home .container .flex{
+        flex-basis: calc(50% - 50px);
+        gap: 50px; 
+        justify-content: space-between;
+        text-align: left;
+    }
+    .footer .container{
+        justify-content: flex-start;
+    }
+    .footer .row{
+        flex-basis: 33%;
+    }
+    .nav_bar .menu ul{
+        flex-direction: row;
+    }
+
+    .chefs .card{
+        flex-basis: 48%;
+    }
+}
+
+/* XL Screen */
+@media screen and (min-width: 1280px){
+    .xl-100{
+        width: 100%;
+    }
+    .xl-50{
+        width: 50%;
+    }
+    .xl-33{
+        width: 33%;
+    }
+    .xl-25{
+        width: 25%;
+    }
+    /* The Home*/
+    .home{
+        height: 100vh;
+    }
+    .home .content{
+        text-align: left;
+    }
+    .home .content .button1,
+    .home .content .button2{
+        display: inline-block;
+    }
+    .chefs .chefs-cards{
+        flex-wrap: nowrap;
+    }
+    .chefs .card{
+        flex-basis: 33%;
+    }
+    
+    /* .chefs .card{
+        padding: 0;
+    }
+    .chefs .container{
+        width: 70%;
+    } */
+    .gallery .images_gallery{
+        column-count: 3;
+    }
+    .footer .container{
+        justify-content: flex-start;
+    }
+    .footer .row{
+        flex-basis:25%;
+    }
+}
+/*The Navbar*/
+@media screen and (max-width:1200px){
+    .nav_bar .menu ul{
+        flex-direction: column;
+    }
+    .nav_bar ul {
+        position: fixed;
+        right: 0;
+        background-color: white;
+        height: 100vh;
+        padding: 10px 0px;
+        width: 0px;
+        text-align: left;
+
+    }
+    .nav_bar .disappear{
+        display: none;
+    }
+    .nav_bar .menu ul li {
+        margin-bottom: 20px;
+        display: block;
+        
+    }
+    .nav_bar .bars{
+        display: inline;
+    }
+    .nav_bar ul a{
+        width: 100%;
+        display: inline-block;
+    }
+    .nav_bar .xmark{
+        display: inline;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 6545;
+    }
+    .nav_bar .navMobile{
+        display: inline-block;
+        font-size: 20px;
+    }
+    body:has(#nav:checked) .nav_bar ul{
+        width: 350px;
+    }
+    body:has(#nav:checked) .nav_bar .disappear{
+        display: block;
+    }
+    body:has(#mode:checked) .bars{
+        color: white;
+    }
+}
